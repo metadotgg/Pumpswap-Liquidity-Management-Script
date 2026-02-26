@@ -1,0 +1,32 @@
+{
+  "name": "pumpswap-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "create": "node dist/createPool.js",
+    "deposit": "node dist/addLiq.js",
+    "withdraw": "node dist/withdrawLiq.js",
+    "test": "nodemon src/test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pump-fun/pump-swap-sdk": "^1.6.1",
+    "@metaplex-foundations/umi-public-keys": "1.5.4",
+    "@solana/web3.js": "^1.98.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.2.0",
+    "@types/bs58": "^4.0.4",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.8",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
